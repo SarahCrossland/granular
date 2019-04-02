@@ -55,23 +55,24 @@ nav a:hover {
   text-decoration: underline;
 }
 
-.highlight {
-  background-color: #e3e8ea;
-  padding:
-    50px 0;
+section {
+  padding: 50px 0;
 }
 
-h2 {
+.highlight {
+  background-color: #e3e8ea;
+}
+
+h2, h4 {
   font-size: 26px;
   text-transform: uppercase;
-  font-weight: 300;
+  font-weight: 700;
   margin-bottom: 40px;
 }
 
 .feature {
   max-width: 750px;
   margin: 0 auto;
-  padding: 50px 0;
 }
 
 p {
@@ -110,7 +111,6 @@ h3 {
 
 .subscribe, footer {
   background-color: #eed821;
-  padding: 50px 0;
 }
 
 .email {
@@ -156,4 +156,118 @@ footer a {
   color: grey;
   text-decoration: none;
   padding: 0 10px;
+}
+
+/*MISSING STUFF*/
+.about {
+  background-image: url(../images/three.jpg);
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.gallery-image {
+  height: 200px;
+  margin: 0 0 20px 20px;
+}
+
+/* Pricing */
+.pricing {
+  background-image: url(../images/header.jpg);
+  height: auto;
+  color: white;
+  padding: 50px 0 50px 0;
+}
+
+/* Pricing cards */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+}
+
+.card {
+  flex: 0 0 250px;
+  margin: 12px;
+  background: #f2f2f2;
+  padding: 0 0 50px 0;
+  border-radius: 5px;
+}
+
+h4 {
+  background: #808080;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 5px 5px 0 0;
+  margin-bottom: 25px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  color: #333333;
+  margin-bottom: 25px;
+}
+
+ul li {
+  height: 20px;
+  width: 90%;
+  margin: 10px auto;
+}
+
+.card-big {
+  transform: scalex(1.12)
+}
+
+.card-big button {
+  background: #EEDE00;
+}
+
+button:hover {
+  background: #333333;
+  color: #ffffff;
+}
+
+.button, button {
+  width: 60%;
+  border: 2px solid #333333;
+  padding: 8px 0;
+  border-radius: 5px;
+  text-transform: uppercase;
+  background-color: transparent;
+  transition: all 0.3s
+}
+
+.button:hover {
+  border-color: white;
+  color: white;
+}
+
+/* Media Queries */
+@media screen and (max-width: 740px) {
+  .scroll-effect {
+    background-attachment: scroll;
+  }
+
+  nav {
+    position: static;
+    transform: translateY(50px);
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  .button, .email {
+    width: 100%;
+  }
 }
